@@ -30,19 +30,6 @@ html, body {
             transition: none;  /* Makes the flash instant on the 5th click */
         }
 
-#homepage.page,
-#vehicles.page,
-#licence-landing.page,
-#demerit.page,
-#profile.page,
-#payment.page {
-  overflow: hidden;
-  height: 100%;
-  touch-action: none;
-}
-
-
-
 #home.page,
 #qr.page,
 #pin.page {
@@ -1518,7 +1505,7 @@ h3 {
   max-width: 430px;
   width: 100%;
   margin: 0 auto;
-  background: #eef1f4;
+  background: #f2f4f7;
   position: relative;
   display: flow-root;
 }
@@ -1652,7 +1639,6 @@ h3 {
       min-height: 100vh;
       max-width: 430px;
       width: 100%;
-      height: 100%;
       margin: 0 auto;
       background: #f2f4f7;
       position: relative;
