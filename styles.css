@@ -30,6 +30,19 @@ html, body {
             transition: none;  /* Makes the flash instant on the 5th click */
         }
 
+#homepage.page,
+#vehicles.page,
+#licence-landing.page,
+#demerit.page,
+#profile.page,
+#payment.page {
+  overflow: hidden;
+  height: 100%;
+  touch-action: none;
+}
+
+
+
 #home.page,
 #qr.page,
 #pin.page {
