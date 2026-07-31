@@ -6,6 +6,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+
   <!-- iPhone PWA -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -33,6 +35,17 @@ if ('serviceWorker' in navigator) {
 self.addEventListener("activate", event => {
     event.waitUntil(clients.claim());
 });
+
+  document.addEventListener('gesturestart', e => e.preventDefault());
+document.addEventListener('gesturechange', e => e.preventDefault());
+
+let lastTouchEnd = 0;
+document.addEventListener('touchend', (e) => {
+  const now = Date.now();
+  if (now - lastTouchEnd <= 300) e.preventDefault();
+  lastTouchEnd = now;
+}, { passive: false });
+
   
 </script>
 
@@ -992,7 +1005,7 @@ self.addEventListener("activate", event => {
 
 let lastTab = 'home';
 
-let scrollUnlocked = true;
+let scrollUnlocked = false;
 let homeTapTimestamps = [];
 
 function handleHomeNavTap() {
@@ -1017,6 +1030,7 @@ function applyScrollLockState() {
     document.querySelector('#licence-landing .ll-content'),
     document.querySelector('#payment .payment-content'),
     document.querySelector('#profile .profile-content')
+    document.querySelector('#demerit .content')
   ];
 
   gatedContainers.forEach(el => {
