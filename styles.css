@@ -52,7 +52,7 @@ html, body {
 
 body {
   margin: 0;
-  background: #ffffff;
+  background: #eef1f4;
   color: #111;
 }
 
@@ -92,6 +92,8 @@ body {
 #identity .nav,
 #age .nav {
   display: none !important;
+  padding-bottom: env(safe-area-inset-bottom);
+  height: calc(100px + env(safe-area-inset-bottom));
 }
 
 .app {
@@ -750,6 +752,8 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  padding-bottom: env(safe-area-inset-bottom);
+  height: calc(100px + env(safe-area-inset-bottom));
 }
 
 #homepage .nav a {
@@ -1320,6 +1324,8 @@ h3 {
   border-top: 1px solid #ddd;
   display: flex;
   justify-content: space-around;
+    padding-bottom: env(safe-area-inset-bottom);
+  height: calc(100px + env(safe-area-inset-bottom));
 }
 
 
@@ -1390,7 +1396,6 @@ h3 {
 /* demerit page */
 
  * #demerit { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-    body { background: #ffffff; color: #111; }
 
     /* phone frame */
     #demerit .app {
@@ -1619,6 +1624,8 @@ h3 {
   border-top: 1px solid #ddd;
   display: flex;
   justify-content: space-around;
+  padding-bottom: env(safe-area-inset-bottom);
+  height: calc(100px + env(safe-area-inset-bottom));
 }
 
 
