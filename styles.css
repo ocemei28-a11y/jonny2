@@ -10,6 +10,18 @@ html, body {
   width: 100%;
 }
 
+#homepage.page,
+#vehicles.page,
+#licence-landing.page,
+#demerit.page,
+#profile.page,
+#payment.page {
+  overflow: hidden;
+  height: 100%;
+  touch-action: none;
+}
+
+
 .secret-text-trigger {
             color: inherit;       
             font-weight: inherit;  
