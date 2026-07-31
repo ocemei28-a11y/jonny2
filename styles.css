@@ -1507,6 +1507,7 @@ h3 {
   margin: 0 auto;
   background: #eef1f4;
   position: relative;
+  display: flow-root;
 }
 
 #vehicles .top-header {
