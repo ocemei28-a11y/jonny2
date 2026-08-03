@@ -6,8 +6,9 @@
 
 
 html, body {
-  height: 100%;
-  width: 100%;
+  width: 100vw;
+  height: 100dvh;
+  position: fixed;
 }
 
 #homepage.page,
@@ -102,6 +103,9 @@ body {
   width: 100%;
   margin: 0 auto;
   background: #fff;
+  width: 100vw;
+  height: 100dvh;
+  position: fixed;
 }
 
 
