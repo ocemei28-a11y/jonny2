@@ -95,7 +95,6 @@ body {
   display: none !important;
   padding-bottom: env(safe-area-inset-bottom);
   height: calc(100px + env(safe-area-inset-bottom));
-  bottom: -15px;
 }
 
 .app {
@@ -757,7 +756,6 @@ h3 {
   width: 100%;
   padding-bottom: env(safe-area-inset-bottom);
   height: calc(100px + env(safe-area-inset-bottom));
-  bottom: -15px;
 }
 
 #homepage .nav a {
@@ -1330,7 +1328,6 @@ h3 {
   justify-content: space-around;
     padding-bottom: env(safe-area-inset-bottom);
   height: calc(100px + env(safe-area-inset-bottom));
-  bottom: -15px;
 }
 
 
@@ -1631,7 +1628,6 @@ h3 {
   justify-content: space-around;
   padding-bottom: env(safe-area-inset-bottom);
   height: calc(100px + env(safe-area-inset-bottom));
-  bottom: -15px;
 }
 
 
