@@ -8,8 +8,10 @@
 html, body {
   width: 100vw;
   height: 100dvh;
-  position: relative;
+  position: fixed;
+  overflow: hidden;   /* add this too, belt-and-suspenders */
 }
+
 
 #homepage.page,
 #vehicles.page,
